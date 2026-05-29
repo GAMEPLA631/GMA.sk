@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="sk" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMEPLA631 Corporation - Oficiálne Pravidlá & Smernice</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for professional legal icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts - Inter & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        brand: {
+                            gold: '#D4AF37',
+                            red: '#E11D48',
+                            darkRed: '#9F1239',
+                            slate: '#0F172A',
+                            accent: '#F43F5E'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glow-text {
+            text-shadow: 0 0 15px rgba(225, 29, 72, 0.4);
+        }
+        .glow-border {
+            box-shadow: 0 0 20px rgba(225, 29, 72, 0.15);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #090d16;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #e11d48;
+        }
+        .active-paragraph {
+            border-left: 4px solid #e11d48 !important;
+            background-color: rgba(225, 29, 72, 0.05);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-[#030712] text-slate-100 font-sans antialiased selection:bg-rose-600 selection:text-white">
+
+    <!-- TOP NOTIFICATION BANNER -->
+    <div class="bg-gradient-to-r from-red-950 via-brand-red to-red-950 text-white text-xs font-mono py-2.5 px-4 text-center tracking-widest uppercase border-b border-rose-800/40 flex items-center justify-center gap-2 animate-pulse">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+        <span>Právna Výstraha: Smernica nadobúda účinnosť od 10.06.2026</span>
+        <i class="fa-solid fa-triangle-exclamation"></i>
+    </div>
+
+    <!-- MAIN CORPORATE HEADER -->
+    <header class="border-b border-slate-800/80 bg-[#090d16]/90 backdrop-blur sticky top-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <div class="h-11 w-11 rounded-lg bg-gradient-to-tr from-rose-600 to-amber-500 p-[1px] shadow-lg shadow-rose-900/20">
+                    <div class="h-full w-full bg-[#090d16] rounded-lg flex items-center justify-center font-mono font-black text-rose-500 text-lg">
+                        G6
+                    </div>
+                </div>
+                <div>
+                    <span class="font-mono text-xs tracking-widest text-rose-500 font-bold block uppercase">Official Portal</span>
+                    <h1 class="font-black text-xl tracking-wider text-white">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-rose-500 font-extrabold uppercase">GAMEPLA631</span> <span class="text-xs bg-slate-800 text-rose-400 px-2 py-0.5 rounded border border-rose-500/20 font-mono ml-1">CORPORATION</span>
+                    </h1>
+                </div>
+            </div>
+
+            <!-- Header Quick Actions -->
+            <div class="flex items-center gap-3">
+                <a href="#smery" class="hidden md:inline-flex items-center gap-2 text-xs font-mono text-slate-400 hover:text-rose-400 transition-colors px-3 py-1.5 rounded-md border border-slate-800 hover:border-rose-500/30">
+                    <i class="fa-solid fa-scroll"></i> Smernice
+                </a>
+                <a href="#tts-section" class="inline-flex items-center gap-2 text-xs font-mono bg-rose-950/40 text-rose-400 border border-rose-500/30 hover:bg-rose-900/30 transition-all px-4 py-2 rounded-lg">
+                    <span class="h-2 w-2 rounded-full bg-rose-500 animate-ping"></span>
+                    <i class="fa-solid fa-volume-high"></i> Spustiť predčítanie
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTIONS -->
+    <main class="py-12 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <div class="text-center mb-12 relative">
+            <div class="absolute inset-0 bg-radial-gradient from-rose-950/20 to-transparent blur-3xl -z-10 h-72 w-full"></div>
+            
+            <div class="inline-flex items-center gap-2 bg-rose-950/30 border border-rose-900/60 rounded-full px-4 py-1.5 text-xs text-rose-400 font-mono mb-6 uppercase tracking-widest">
+                <i class="fa-solid fa-shield-halved text-rose-500"></i> Oficiálna Právna Ochrana Vlastníctva
+            </div>
+            
+            <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white mb-6 uppercase font-mono">
+                PRÁVNE PRAVIDLÁ & SMERNICE <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 via-amber-500 to-red-600 font-sans tracking-wide">GAMEPLA631 CORPORATION</span>
+            </h2>
+            
+            <p class="text-slate-400 max-w-3xl mx-auto text-base sm:text-lg leading-relaxed">
+                Tento dokument predstavuje záväznú, nezrušiteľnú a právne vymáhateľnú vyhlášku spoločnosti <strong class="text-white border-b border-rose-500/40 pb-0.5">GAMEPLA631 Corporation</strong> regulujúcu autorské práva, tvorbu hudby, textov piesní a využívanie umelej inteligencie (AI) vo vzťahu k našim duševným dielam.
+            </p>
+
+            <div class="mt-8 flex flex-wrap justify-center gap-4 text-xs font-mono text-slate-400 bg-slate-900/60 p-4 rounded-xl border border-slate-800 inline-block">
+                <div class="flex items-center gap-2 px-3 py-1">
+                    <span class="text-slate-500">Kód dokumentu:</span>
+                    <span class="text-rose-400 font-bold">G6-IP-2026-09</span>
+                </div>
+                <div class="hidden sm:block text-slate-700">|</div>
+                <div class="flex items-center gap-2 px-3 py-1">
+                    <span class="text-slate-500">Dátum vydania:</span>
+                    <span class="text-white">29. Máj 2026</span>
+                </div>
+                <div class="hidden sm:block text-slate-700">|</div>
+                <div class="flex items-center gap-2 px-3 py-1">
+                    <span class="text-slate-500">Účinnosť od:</span>
+                    <span class="text-amber-500 font-bold">10. Jún 2026</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- TEXT TO SPEECH DASHBOARD -->
+        <section id="tts-section" class="bg-gradient-to-b from-[#0e1626] to-[#090d16] border border-slate-800 rounded-2xl p-6 mb-12 shadow-2xl relative overflow-hidden glow-border">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-rose-950/10 rounded-full blur-3xl -z-10"></div>
+            
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+                <div>
+                    <h3 class="font-mono text-sm tracking-widest text-rose-500 uppercase font-bold flex items-center gap-2 mb-1">
+                        <i class="fa-solid fa-headphones-simple"></i> INTERAKTÍVNY HLASOVÝ ASISTENT
+                    </h3>
+                    <p class="text-xs text-slate-400">Nechajte si nahlas prečítať kompletné oficiálne nariadenie pomocou systémového hlasu.</p>
+                </div>
+                
+                <!-- Controls -->
+                <div class="flex flex-wrap items-center gap-3">
+                    <button id="btn-play" onclick="startSpeech()" class="px-5 py-3 bg-rose-600 hover:bg-rose-500 active:bg-rose-700 text-white rounded-xl font-medium text-sm flex items-center gap-2 shadow-lg shadow-rose-900/30 transition-all">
+                        <i class="fa-solid fa-play"></i> Prehrať text
+                    </button>
+                    <button id="btn-pause" onclick="pauseSpeech()" class="px-4 py-3 bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-xl font-medium text-sm flex items-center gap-2 transition-all">
+                        <i class="fa-solid fa-pause"></i> Pozastaviť
+                    </button>
+                    <button id="btn-stop" onclick="stopSpeech()" class="px-4 py-3 bg-slate-800 hover:bg-red-950 hover:text-red-400 text-slate-400 rounded-xl font-medium text-sm flex items-center gap-2 transition-all">
+                        <i class="fa-solid fa-stop"></i> Vynulovať
+                    </button>
+                </div>
+            </div>
+
+            <!-- Audio Settings Divider -->
+            <div class="mt-6 pt-6 border-t border-slate-800/80 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Speed -->
+                <div>
+                    <label for="speed-rate" class="block text-xs font-mono text-slate-400 mb-2 uppercase flex justify-between">
+                        <span>Rýchlosť čítania:</span>
+                        <span id="speed-val" class="text-rose-400">1.0x</span>
+                    </label>
+                    <input type="range" id="speed-rate" min="0.5" max="2" step="0.1" value="1" oninput="updateSpeechSettings()" class="w-full accent-rose-600 bg-slate-900 rounded-lg appearance-none h-1.5 cursor-pointer">
+                </div>
+
+                <!-- Pitch -->
+                <div>
+                    <label for="pitch-rate" class="block text-xs font-mono text-slate-400 mb-2 uppercase flex justify-between">
+                        <span>Výška hlasu (Pitch):</span>
+                        <span id="pitch-val" class="text-rose-400">1.0</span>
+                    </label>
+                    <input type="range" id="pitch-rate" min="0.5" max="1.5" step="0.1" value="1" oninput="updateSpeechSettings()" class="w-full accent-rose-600 bg-slate-900 rounded-lg appearance-none h-1.5 cursor-pointer">
+                </div>
+
+                <!-- Voice Selection -->
+                <div>
+                    <label for="voice-select" class="block text-xs font-mono text-slate-400 mb-2 uppercase">Výber syntetizátora / jazyka:</label>
+                    <select id="voice-select" onchange="updateSpeechSettings()" class="w-full bg-[#030712] border border-slate-800 text-slate-300 rounded-lg px-3 py-1.5 text-xs focus:ring-1 focus:ring-rose-500 focus:outline-none">
+                        <!-- Populated by JS -->
+                        <option value="">Predvolený hlas prehliadača</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Progress tracker -->
+            <div class="mt-4 pt-3 border-t border-slate-800/40 flex items-center justify-between text-xs text-slate-500 font-mono">
+                <span class="flex items-center gap-2">
+                    <span id="status-pulse" class="h-2 w-2 rounded-full bg-slate-600"></span>
+                    Status: <span id="tts-status-text" class="text-slate-400">Neaktívne</span>
+                </span>
+                <span id="tts-progress-counter">Odsek: 0 / 0</span>
+            </div>
+        </section>
+
+        <!-- LEGAL WARNING BANNER -->
+        <div class="bg-gradient-to-br from-red-950/40 via-transparent to-transparent border-l-4 border-rose-600 bg-slate-950 p-6 rounded-r-xl mb-12 flex flex-col sm:flex-row gap-5 items-start">
+            <div class="p-3 bg-rose-600/10 rounded-lg border border-rose-500/20 text-rose-500 text-xl shrink-0">
+                <i class="fa-solid fa-gavel"></i>
+            </div>
+            <div>
+                <h4 class="font-mono text-xs tracking-widest text-rose-500 font-bold uppercase mb-2">KRIMINÁLNO-PRÁVNE UPOZORNENIE PRE VŠETKÝCH POUŽÍVATEĽOV</h4>
+                <p class="text-sm text-slate-300 leading-relaxed">
+                    Spoločnosť <strong class="text-white font-extrabold text-rose-400">GAMEPLA631 Corporation</strong> týmto oficiálne upozorňuje, že akékoľvek porušenie tejto smernice bude bez výnimky podstúpené nášmu medzinárodnému právnemu oddeleniu s okamžitým podaním <span class="underline decoration-rose-500 text-rose-300 font-semibold decoration-2">trestného stíhania a žaloby</span> o náhradu škody v plnej výške na príslušných štátnych súdoch.
+                </p>
+            </div>
+        </div>
+
+        <!-- THE LONG CORPORATE DOCUMENT -->
+        <section id="smery" class="bg-gradient-to-b from-[#090d16] to-[#04080e] border border-slate-800/80 rounded-2xl p-6 sm:p-10 shadow-xl space-y-8 relative">
+            <div class="absolute top-12 left-1/2 -translate-x-1/2 opacity-[0.02] pointer-events-none select-none max-w-full overflow-hidden text-center">
+                <i class="fa-solid fa-scale-balanced text-[30rem] text-rose-500"></i>
+            </div>
+
+            <!-- Document Title inside -->
+            <div class="border-b border-slate-800 pb-6 flex justify-between items-end flex-wrap gap-4">
+                <div>
+                    <p class="text-xs font-mono text-rose-500 uppercase tracking-widest">Kódex práv duševného vlastníctva</p>
+                    <h3 class="text-2xl font-black font-mono mt-1 text-white uppercase">SMERNICA GAMEPLA631-C-0626</h3>
+                </div>
+                <div class="px-3 py-1 bg-red-950/40 border border-rose-500/30 rounded text-rose-400 text-xs font-mono font-bold">
+                    PREDČÍTATEĽNÝ TEXT <i class="fa-solid fa-volume-high ml-1"></i>
+                </div>
+            </div>
+
+            <!-- PARAGRAPH BY PARAGRAPH CONTENT -->
+            <!-- We wrap each in a readable container so TTS can read and highlight them -->
+            <div id="document-content" class="space-y-6 text-sm sm:text-base text-slate-300 leading-relaxed font-sans">
+                
+                <p class="tts-p p-4 rounded-lg border border-transparent transition-all duration-300" data-idx="0">
+                    <span class="font-mono text-rose-500 font-bold block mb-2 text-xs">Článok I. — ÚVODNÉ USTANOVENIA A PREAMBULA</span>
+                    Táto smernica a úradný dokument predstavujú právne záväzné pravidlá vydané dňa 29. mája 2026 štatutárnym orgánom nadnárodného konglomerátu <strong class="text-white font-bold bg-slate-900 px-1 py-0.5 rounded border border-slate-800">GAMEPLA631 Corporation</strong>. S cieľom chrániť integritu, autorské práva, nehmotný majetok, kód, vizuálne dielo, herný dizajn a celkovú umeleckú hodnotu našich vlajkových herných produktov, najmä však celosvetovo známych titulov <strong class="text-white font-semibold italic text-rose-400">Capture & Slash</strong>, <strong class="text-white font-semibold italic text-rose-400">Capture & End</strong>, ako aj všetkých virtuálnych svetov, zážitkov, skriptov a herných simulácií, ktoré naša spoločnosť aktívne vyvíja, programuje a prevádzkuje v rámci globálnej platformy <strong class="text-amber-500 font-extrabold uppercase tracking-wider"><i class="fa-solid fa-cube text-xs"></i> Roblox</strong> pod našou oficiálnou vývojárskou skupinou, sa zriaďujú nasledovné exkluzívne pravidlá. Súčasná situácia na globálnom trhu si vyžaduje mimoriadne prísne regulácie autorskej ochrany v oblasti audiovizuálnej a textovej tvorby, nakoľko akékoľvek zneužitie, poškodenie alebo parodovanie našich herných značiek vrátane našich Roblox hier môže spôsobiť závažné finančné, morálne a reputačné škody našej korporácii.
+                </p>
+
+                <p class="tts-p p-4 rounded-lg border border-transparent transition-all duration-300" data-idx="1">
+                    <span class="font-mono text-rose-500 font-bold block mb-2 text-xs">Článok II. — ABSOLÚTNY ZÁKAZ AUTORSKEJ HUDBY A TEXTOV</span>
+                    S platnosťou od stanoveného termínu sa prísne a bezpodmienečne zakazuje akákoľvek neautorizovaná tvorba, produkcia, distribúcia, publikovanie, zdieľanie alebo propagácia akéhokoľvek hudobného materiálu, piesní, melódií, orchestrálnych skladieb, zvukových stôp a sprievodných hudobných textov (lyrics), ktoré sú inšpirované, tematicky prepojené alebo akýmkoľvek spôsobom asociované s našimi hernými titulmi, špecificky vrátane hier <strong class="text-white font-semibold">Capture & Slash</strong>, <strong class="text-white font-semibold">Capture & End</strong> a všetkých našich oficiálnych hier a máp, ktoré vytvárame na platforme <strong class="text-amber-500 font-bold">Roblox</strong>. Tento zákaz sa vzťahuje na amatérskych umelcov, profesionálnych tvorcov, fanúšikov, nezávislé štúdiá a všetkých ostatných používateľov internetu. Užívateľská tvorba, predtým označovaná za "fan-art" alebo "fan-music" (vrátane Roblox audio assetov a rádiových kódov), je týmto krokom spoločnosti <strong class="text-white font-bold">GAMEPLA631 Corporation</strong> vyhlásená za nelegálnu, nakoľko ohrozuje výhradnú licenciu a originálny autorský zámer diela.
+                </p>
+
+                <p class="tts-p p-4 rounded-lg border border-transparent transition-all duration-300" data-idx="2">
+                    <span class="font-mono text-rose-500 font-bold block mb-2 text-xs">Článok III. — SANKCIE A KONTROLA DUŠEVNÉHO VLASTNÍCTVA</span>
+                    Akékoľvek zverejnenie skladby s motívmi našich hier na platformách ako YouTube, Spotify, Soundcloud, Bandcamp, TikTok či Instagram bude považované za priame porušenie medzinárodného autorského zákona a autorskej ochrany spoločnosti <strong class="text-white font-bold">GAMEPLA631 Corporation</strong>. Naša bezpečnostná a právna divízia nepretržite 24 hodín denne monitoruje digitálny priestor za pomoci pokročilých detekčných algoritmov. V prípade odhalenia takejto nahrávky bude bez predchádzajúceho varovania udelený okamžitý "Copyright Strike" (blokovanie účtu), stiahnutie z trhu a začatie mimosúdneho alebo súdneho konania voči autorovi nelegálneho diela.
+                </p>
+
+                <p class="tts-p p-4 rounded-lg border border-transparent transition-all duration-300" data-idx="3">
+                    <span class="font-mono text-rose-500 font-bold block mb-2 text-xs">Článok IV. — EXPLICITNÉ VAROVANIE PRED TRESTNOU ŽALOBOU</span>
+                    Každý jednotlivec alebo skupina osôb, ktorá vedome alebo nevedome poruší tieto pravidlá, sa vystavuje hrozbe závažnej občianskoprávnej a trestnoprávnej zodpovednosti. Právne oddelenie <strong class="text-white font-bold">GAMEPLA631 Corporation</strong> podá bezodkladne žalobu za porušenie autorských práv. Takéto konanie môže na základe vnútroštátnych a medzinárodných právnych noriem viesť k udeleniu finančných trestov, prepadnutiu technického vybavenia, ktorým bolo dielo vytvorené, a k trestnému stíhaniu, ktoré môže v závažných prípadoch skončiť odňatím slobody. Táto smernica slúži ako oficiálne verejné prehlásenie a jej ignorovanie pred súdom nebude akceptované ako poľahčujúca okolnosť.
+                </p>
+
+                <p class="tts-p p-4 rounded-lg border border-transparent transition-all duration-300" data-idx="4">
+                    <span class="font-mono text-rose-500 font-bold block mb-2 text-xs">Článok V. — ÚČINNOSŤ OD BUDÚCEHO MESIACA: 10. JÚN 2026</span>
+                    Táto korporátna vyhláška a všetky jej reštriktívne opatrenia nadobúdajú plnú, bezpodmienečnú právnu účinnosť od budúceho mesiaca, presnejšie dňa <strong class="text-rose-400 underline decoration-rose-500 font-bold font-mono">10. júna 2026</strong>. Dovtedy sú všetci tvorcovia povinní okamžite stiahnuť, vymazať a zlikvidovať akékoľvek nahrávky, videá, texty, obaly albumov, plagáty či demo verzie piesní inšpirovaných titulmi <strong class="text-white font-semibold">Capture & Slash</strong> a <strong class="text-white font-semibold">Capture & End</strong>, ktoré kedy nahrali na akúkoľvek verejnú sieť alebo úložisko. Počnúc dňom 10.6.2026 sa na akékoľvek nájdené diela bude hľadieť ako na úmyselné trestné konanie s cieľom parazitovať na duševnom vlastníctve <strong class="text-white font-bold">GAMEPLA631 Corporation</strong>.
+                </p>
+
+                <p class="tts-p p-4 rounded-lg border border-transparent transition-all duration-300" data-idx="5">
+                    <span class="font-mono text-rose-500 font-bold block mb-2 text-xs">Článok VI. — REGULÁCIA AI A ZÁKAZ CUDZÍCH MODELOV (CHATGPT, GEMINI, CLAUDE)</span>
+                    Smernica sa v plnom rozsahu zaoberá aj modernými technológiami generovania obsahu. Je prísne, explicitne a kategoricky zakázané používať a trénovať akékoľvek cudzie a komerčne dostupné modely umelej inteligencie, akými sú napríklad **ChatGPT** od OpenAI, **Gemini** od Google, **Claude** od Anthropic, **Midjourney**, **Suno AI** alebo **Udio** na vytváranie hudby, textov, scenárov alebo akýchkoľvek lore databáz k hrám <strong class="text-white font-bold">GAMEPLA631 Corporation</strong>. Generovanie akéhokoľvek textového alebo hudobného obsahu týkajúceho sa našich hier prostredníctvom týchto cudzích platforiem je definované ako nelegálne kradnutie firemných dát a duševných licencií. Na takéto pokusy bude nazerané rovnako prísne ako na manuálne plagiátorstvo.
+                </p>
+
+                <p class="tts-p p-4 rounded-lg border border-transparent transition-all duration-300" data-idx="6">
+                    <span class="font-mono text-rose-500 font-bold block mb-2 text-xs">Článok VII. — SCHVÁLENÉ A POVOLENÉ SYSTÉMY: NAŠA AI A CHATSLOVAK AI v6.1</span>
+                    Jedinou povolenou výnimkou na celom svete sú certifikované systémy spoločnosti <strong class="text-white font-bold">GAMEPLA631 Corporation</strong>. Používatelia majú povolené generovať herné texty, básne, príbehy, dialógy a scenáre o našich hrách výhradne cez **našu internú autorskú AI** zabudovanú v oficiálnych rozhraniach našich produktov. Druhou, úzko špecializovanou výnimkou, je autorizovaný národný jazykový model **ChatSlovak AI v6.1**, ktorý bol certifikovaný našimi právnikmi a disponuje oficiálnym šifrovaným licenciovaným kľúčom pre bezpečné generovanie korektných, korporátne schválených textov v súlade s našou internou hernou filozofiou a právnymi normami. Žiadne iné lokálne ani cloudové modely túto výnimku nemajú.
+                </p>
+
+                <p class="tts-p p-4 rounded-lg border border-transparent transition-all duration-300" data-idx="7">
+                    <span class="font-mono text-rose-500 font-bold block mb-2 text-xs">Článok VIII. — SPOLOČNÉ A ZÁVEREČNÉ USTANOVENIA</span>
+                    Táto listina je konečná a nie je možné sa voči nej odvolať ani žiadať výnimku pre osobné alebo neziskové účely. Svojím vstupom do herného prostredia a kúpou licencií k produktom <strong class="text-white font-bold">Capture & Slash</strong> a <strong class="text-white font-semibold">Capture & End</strong> automaticky vyjadrujete súhlas s týmito podmienkami. Spoločnosť <strong class="text-white font-bold">GAMEPLA631 Corporation</strong> si vyhradzuje právo kedykoľvek zmeniť alebo doplniť tieto pravidlá v závislosti od aktuálneho vývoja medzinárodnej legislatívy a technických možností ochrany duševného bohatstva spoločnosti. Každý užívateľ je povinný sa pravidelne oboznamovať so znením tohto dokumentu na tejto oficiálnej adrese.
+                </p>
+
+            </div>
+
+            <!-- SIGNATURE -->
+            <div class="border-t border-slate-800 pt-8 mt-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+                <div class="flex items-center gap-4 bg-[#0c121e] p-4 rounded-xl border border-slate-800/60">
+                    <!-- Sealed Logo Mock -->
+                    <div class="h-14 w-14 rounded-full border-2 border-dashed border-rose-500/60 flex items-center justify-center text-rose-500 animate-[spin_40s_linear_infinite]">
+                        <i class="fa-solid fa-stamp text-xl"></i>
+                    </div>
+                    <div>
+                        <span class="font-mono text-[10px] text-slate-500 block">DOKUMENT SPEČATENÝ</span>
+                        <span class="text-xs text-rose-400 font-mono font-bold">G6 Legal Block 2026-X</span>
+                        <span class="block text-[9px] text-slate-400">GAMEPLA631 Corp Legal Signature ID: #884-21A-99F</span>
+                    </div>
+                </div>
+
+                <div class="text-right">
+                    <p class="text-xs font-mono text-slate-400">Vystavil:</p>
+                    <p class="font-bold text-white text-sm font-mono tracking-wider">JUDr. Alexander Vance</p>
+                    <p class="text-xs text-rose-500 font-mono">Vedúci právneho konsorcia GAMEPLA631</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTERACTIVE DEMO: AI ALLOWED CHEKCER -->
+        <section class="bg-[#090d16] border border-slate-800/80 rounded-2xl p-6 mb-12 shadow-md">
+            <h3 class="font-mono text-sm tracking-widest text-amber-500 uppercase font-bold flex items-center gap-2 mb-4">
+                <i class="fa-solid fa-microchip"></i> OVEROVANIE DOVOLENÝCH AI SYSTÉMOV (INTERAKTÍVNE)
+            </h3>
+            <p class="text-xs text-slate-400 mb-6">Zadajte názov AI systému, ktorým chcete generovať text alebo herné texty. Náš firewall vyhodnotí povolenie v súlade so Smernicou 2026-A.</p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <!-- AI Input area -->
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-mono text-slate-500 mb-2 uppercase">Zadajte názov AI softvéru:</label>
+                        <div class="relative">
+                            <input type="text" id="ai-input" placeholder="napr. ChatGPT, Gemini, ChatSlovak AI v6.1..." class="w-full bg-[#030712] border border-slate-800 rounded-xl px-4 py-3 text-sm focus:border-rose-500 focus:outline-none text-white pr-10 font-mono">
+                            <button onclick="checkAI()" class="absolute right-2 top-2 p-1.5 bg-rose-600 hover:bg-rose-500 text-white rounded-lg transition-all text-xs">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="flex gap-2">
+                        <button onclick="quickTestAI('ChatSlovak AI v6.1')" class="px-3 py-1 bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-lg text-xs font-mono transition-all">
+                            ChatSlovak AI v6.1
+                        </button>
+                        <button onclick="quickTestAI('ChatGPT')" class="px-3 py-1 bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-lg text-xs font-mono transition-all">
+                            ChatGPT
+                        </button>
+                        <button onclick="quickTestAI('Gemini')" class="px-3 py-1 bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-lg text-xs font-mono transition-all">
+                            Gemini
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Live Evaluation Screen -->
+                <div id="ai-status-card" class="bg-[#030712] rounded-xl border border-slate-800 p-4 flex flex-col justify-center items-center text-center">
+                    <div id="ai-status-icon" class="h-12 w-12 rounded-full bg-slate-800/50 flex items-center justify-center text-slate-400 text-lg mb-3">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <h4 id="ai-status-title" class="font-mono text-xs font-bold uppercase tracking-wider text-slate-400">Čaká sa na dopyt</h4>
+                    <p id="ai-status-desc" class="text-xs text-slate-500 mt-1">Zadajte umelú inteligenciu pre analýzu licenčných práv.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- REPORTING FORM -->
+        <section class="bg-gradient-to-tr from-slate-950 to-[#0c121f] border border-slate-800/80 rounded-2xl p-6 sm:p-8 shadow-xl">
+            <h3 class="font-mono text-sm tracking-widest text-rose-500 uppercase font-bold flex items-center gap-2 mb-3">
+                <i class="fa-solid fa-bullhorn animate-bounce"></i> ANONYMNÝ SYSTÉM NA NAHLASOVANIE PORUŠOVATEĽOV
+            </h3>
+            <p class="text-xs text-slate-400 mb-6">
+                Našli ste niekoho, kto zložil pieseň inšpirovanú hrou <strong class="text-slate-300">Capture & Slash</strong> alebo vytvoril texty pomocou ChatGPT? Pomôžte <strong class="text-white font-bold text-rose-500">GAMEPLA631 Corporation</strong> v boji proti pirátstvu. Nahláste link anonymne.
+            </p>
+
+            <form onsubmit="handleReport(event)" class="space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-mono text-slate-400 mb-2 uppercase">URL adresa nelegálnej skladby/textu:</label>
+                        <input required type="url" placeholder="https://youtube.com/watch?v=..." class="w-full bg-[#030712] border border-slate-800 rounded-xl px-4 py-3 text-sm focus:border-rose-500 focus:outline-none text-white font-mono">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-mono text-slate-400 mb-2 uppercase">Platforma, kde sa dielo nachádza:</label>
+                        <select class="w-full bg-[#030712] border border-slate-800 rounded-xl px-4 py-3 text-sm focus:border-rose-500 focus:outline-none text-white">
+                            <option>YouTube</option>
+                            <option>Spotify</option>
+                            <option>SoundCloud</option>
+                            <option>TikTok / Instagram</option>
+                            <option>Iný web / Blog</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-xs font-mono text-slate-400 mb-2 uppercase">Doplňujúce detaily (nepovinné):</label>
+                    <textarea placeholder="Popíšte, ako autor porušil autorské práva..." class="w-full bg-[#030712] border border-slate-800 rounded-xl px-4 py-3 text-sm focus:border-rose-500 focus:outline-none text-white h-24"></textarea>
+                </div>
+                
+                <div class="flex items-center justify-between flex-wrap gap-4 pt-2">
+                    <label class="flex items-center gap-2 cursor-pointer text-xs text-slate-400">
+                        <input type="checkbox" required class="rounded accent-rose-600 bg-slate-900 border-slate-800">
+                        <span>Potvrdzujem pravdivosť údajov pod sankciou krivého svedectva.</span>
+                    </label>
+                    
+                    <button type="submit" class="px-6 py-3 bg-rose-600 hover:bg-rose-500 active:bg-rose-700 text-white rounded-xl font-mono text-xs font-bold uppercase transition-all shadow-md shadow-rose-950/40">
+                        Odoslať nahlásenie <i class="fa-solid fa-paper-plane ml-1"></i>
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-900 bg-[#02050b] py-12 mt-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left">
+            <div class="flex flex-col sm:flex-row justify-between items-center gap-8 border-b border-slate-900 pb-8 mb-8">
+                <div class="flex items-center gap-3">
+                    <div class="h-8 w-8 rounded bg-rose-600 flex items-center justify-center font-mono font-bold text-white text-xs">
+                        GP
+                    </div>
+                    <div>
+                        <p class="font-mono text-sm tracking-widest text-white font-bold"><span class="text-rose-500">GAMEPLA631</span> Corporation</p>
+                        <p class="text-[10px] text-slate-500">Všetky práva vyhradené © 2026</p>
+                    </div>
+                </div>
+                
+                <div class="flex gap-6 text-xs font-mono text-slate-400">
+                    <a href="#" class="hover:text-rose-400 transition-colors">Právna ochrana</a>
+                    <a href="#" class="hover:text-rose-400 transition-colors">GDPR</a>
+                    <a href="#" class="hover:text-rose-400 transition-colors">Zmluvné podmienky</a>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 text-[11px] text-slate-500">
+                <p>Upozornenie: Táto webová stránka a jej obsah sú majetkom nadnárodného subjektu GAMEPLA631 Corporation. Každé zneužitie kódu alebo dizajnu bude trestne stíhané.</p>
+                <p class="shrink-0">ID Stanice: <span class="font-mono text-rose-500">SMRN-06-2026-SK-OFFICIAL</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SUCCESS NOTIFICATION TOAST -->
+    <div id="toast" class="fixed bottom-6 right-6 transform translate-y-24 opacity-0 bg-slate-900 border-l-4 border-emerald-500 text-slate-100 p-4 rounded-r-lg shadow-2xl transition-all duration-300 flex items-center gap-3 z-50 max-w-sm">
+        <div class="h-8 w-8 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-check"></i>
+        </div>
+        <div>
+            <h5 class="font-bold text-xs font-mono text-emerald-400 uppercase">Úspešná akcia</h5>
+            <p id="toast-text" class="text-xs text-slate-400">Nahlásenie bolo úspešne doručené legal serverom.</p>
+        </div>
+    </div>
+
+    <!-- SPEECH SYNTHESIS ENGINE & UTILITY INTERACTIVES -->
+    <script>
+        // Array of paragraph texts
+        const paragraphs = [];
+        let synth = window.speechSynthesis;
+        let speechUtterance = null;
+        let isPlaying = false;
+        let currentParaIdx = 0;
+        let voicesList = [];
+
+        // Preload paragraphs once DOM loads
+        document.addEventListener("DOMContentLoaded", () => {
+            const pElements = document.querySelectorAll('.tts-p');
+            pElements.forEach((el, index) => {
+                paragraphs.push({
+                    index: index,
+                    text: el.innerText.replace(/Článok [I|V|X]+\. — [A-ZÁ-Ž\s]+/, ''), // clean heading for better read aloud
+                    rawElement: el
+                });
+            });
+
+            // Set progress counter text
+            document.getElementById('tts-progress-counter').innerText = `Odsek: 0 / ${paragraphs.length}`;
+            
+            // Populate Speech Voices
+            setTimeout(loadVoices, 300);
+            if (synth && synth.onvoiceschanged !== undefined) {
+                synth.onvoiceschanged = loadVoices;
+            }
+        });
+
+        // Load systems speech voices
+        function loadVoices() {
+            if (!synth) return;
+            voicesList = synth.getVoices();
+            const voiceSelect = document.getElementById('voice-select');
+            
+            // Keep default option
+            voiceSelect.innerHTML = '<option value="default">Vybrať predvolený hlas</option>';
+
+            // Find Slovak or Slavic voices first to push to top
+            voicesList.forEach((voice, i) => {
+                const isSK = voice.lang.includes('sk') || voice.lang.includes('cs') || voice.lang.includes('PL');
+                const option = document.createElement('option');
+                option.value = i;
+                option.textContent = `${voice.name} (${voice.lang})${isSK ? ' - Doporučený' : ''}`;
+                if (isSK) {
+                    option.classList.add('font-bold', 'text-rose-400');
+                }
+                voiceSelect.appendChild(option);
+            });
+
+            // Automatically try selecting a Slovak voice
+            const skVoiceIndex = voicesList.findIndex(v => v.lang.startsWith('sk-SK') || v.lang.startsWith('sk'));
+            if (skVoiceIndex !== -1) {
+                voiceSelect.value = skVoiceIndex;
+            }
+        }
+
+        // Text-to-speech triggers
+        function startSpeech() {
+            if (!synth) {
+                showToast("Syntéza reči nie je podporovaná vo vašom prehliadači.");
+                return;
+            }
+
+            if (synth.speaking) {
+                if (synth.paused) {
+                    synth.resume();
+                    isPlaying = true;
+                    updateTTSStatus("Číta sa (Obnovené)", "bg-emerald-500 animate-pulse");
+                    return;
+                }
+                // If speaking but not paused, stop first to restart
+                stopSpeech();
+            }
+
+            isPlaying = true;
+            playParagraphSequence(currentParaIdx);
+        }
+
+        function playParagraphSequence(index) {
+            if (index >= paragraphs.length) {
+                // Done reading
+                stopSpeech();
+                updateTTSStatus("Dokončené", "bg-emerald-500");
+                showToast("Celé právne oznámenie bolo úspešne prečítané.");
+                return;
+            }
+
+            currentParaIdx = index;
+            document.getElementById('tts-progress-counter').innerText = `Odsek: ${index + 1} / ${paragraphs.length}`;
+            updateTTSStatus(`Číta sa odsek ${index + 1}...`, "bg-rose-500 animate-pulse");
+
+            // Highlight active paragraph visually
+            highlightParagraph(index);
+
+            // Configure speech
+            const para = paragraphs[index];
+            speechUtterance = new SpeechSynthesisUtterance(para.text);
+            
+            // Apply selected speed & pitch
+            const rateInput = document.getElementById('speed-rate').value;
+            const pitchInput = document.getElementById('pitch-rate').value;
+            speechUtterance.rate = parseFloat(rateInput);
+            speechUtterance.pitch = parseFloat(pitchInput);
+
+            // Apply selected voice
+            const voiceVal = document.getElementById('voice-select').value;
+            if (voiceVal !== 'default' && voicesList[voiceVal]) {
+                speechUtterance.voice = voicesList[voiceVal];
+            }
+
+            // Move to next paragraph on end
+            speechUtterance.onend = () => {
+                if (isPlaying) {
+                    playParagraphSequence(index + 1);
+                }
+            };
+
+            speechUtterance.onerror = (e) => {
+                console.error("Speech Error:", e);
+                updateTTSStatus("Chyba čítania", "bg-red-500");
+            };
+
+            // Speak
+            synth.speak(speechUtterance);
+        }
+
+        function pauseSpeech() {
+            if (synth && synth.speaking && !synth.paused) {
+                synth.pause();
+                isPlaying = false;
+                updateTTSStatus("Pozastavené", "bg-amber-500 animate-pulse");
+            }
+        }
+
+        function stopSpeech() {
+            if (synth) {
+                isPlaying = false;
+                synth.cancel();
+                clearAllParagraphHighlights();
+                currentParaIdx = 0;
+                document.getElementById('tts-progress-counter').innerText = `Odsek: 0 / ${paragraphs.length}`;
+                updateTTSStatus("Zastavené / Resetované", "bg-slate-500");
+            }
+        }
+
+        function updateSpeechSettings() {
+            const speed = document.getElementById('speed-rate').value;
+            const pitch = document.getElementById('pitch-rate').value;
+            document.getElementById('speed-val').innerText = `${speed}x`;
+            document.getElementById('pitch-val').innerText = pitch;
+
+            // If speaking, restart from active paragraph to apply changes
+            if (isPlaying && synth.speaking) {
+                synth.cancel();
+                playParagraphSequence(currentParaIdx);
+            }
+        }
+
+        function highlightParagraph(index) {
+            clearAllParagraphHighlights();
+            const target = paragraphs[index];
+            if (target && target.rawElement) {
+                target.rawElement.classList.add('active-paragraph');
+                // Smoothly scroll active paragraph to viewport center
+                target.rawElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        }
+
+        function clearAllParagraphHighlights() {
+            const pElements = document.querySelectorAll('.tts-p');
+            pElements.forEach(el => el.classList.remove('active-paragraph'));
+        }
+
+        function updateTTSStatus(text, bgClass) {
+            const statusText = document.getElementById('tts-status-text');
+            const statusPulse = document.getElementById('status-pulse');
+            
+            statusText.innerText = text;
+            statusPulse.className = `h-2 w-2 rounded-full ${bgClass}`;
+        }
+
+        // AI CHECKER CODE
+        function checkAI() {
+            const input = document.getElementById('ai-input').value.trim();
+            if (!input) {
+                showToast("Zadajte názov umelej inteligencie.");
+                return;
+            }
+            evaluateAI(input);
+        }
+
+        function quickTestAI(name) {
+            document.getElementById('ai-input').value = name;
+            evaluateAI(name);
+        }
+
+        function evaluateAI(name) {
+            const nameLower = name.toLowerCase();
+            const card = document.getElementById('ai-status-card');
+            const icon = document.getElementById('ai-status-icon');
+            const title = document.getElementById('ai-status-title');
+            const desc = document.getElementById('ai-status-desc');
+
+            // Set temporary checking state
+            title.innerText = "Skenujem firewall...";
+            title.className = "font-mono text-xs font-bold uppercase tracking-wider text-amber-500 animate-pulse";
+            desc.innerText = `Prebieha hĺbková analýza licenčnej zhody pre '${name}'...`;
+            icon.innerHTML = `<i class="fa-solid fa-spinner animate-spin text-amber-500"></i>`;
+            icon.className = "h-12 w-12 rounded-full bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-lg mb-3";
+
+            setTimeout(() => {
+                // Decision logic
+                if (nameLower.includes("chatslovak") || nameLower.includes("chatslovak ai") || nameLower.includes("chatslovak ai v6.1")) {
+                    // ChatSlovak AI
+                    title.innerText = "PRÍSTUP POVOLENÝ ✔";
+                    title.className = "font-mono text-xs font-bold uppercase tracking-wider text-emerald-400";
+                    desc.innerHTML = `Licencia pre <strong class="text-white">ChatSlovak AI v6.1</strong> je plne autorizovaná. Systém má povolenie generovať herný text o Capture & Slash/End.`;
+                    icon.innerHTML = `<i class="fa-solid fa-circle-check text-emerald-400"></i>`;
+                    icon.className = "h-12 w-12 rounded-full bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-lg mb-3";
+                    showToast("ChatSlovak AI v6.1 bola úspešne validovaná.", "success");
+                } else if (nameLower.includes("nasa ai") || nameLower.includes("naša ai") || nameLower.includes("nasa") || nameLower.includes("gamepla")) {
+                    // Interna AI
+                    title.innerText = "INTERNÁ AI - POVOLENÁ ✔";
+                    title.className = "font-mono text-xs font-bold uppercase tracking-wider text-teal-400";
+                    desc.innerHTML = `Vlastná <strong class="text-white">Umelá Inteligencia GAMEPLA631</strong> je plne autorizovaným systémom. Zneužitie dát nehrozí.`;
+                    icon.innerHTML = `<i class="fa-solid fa-server text-teal-400"></i>`;
+                    icon.className = "h-12 w-12 rounded-full bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-lg mb-3";
+                } else {
+                    // Banned models (ChatGPT, Gemini, etc.)
+                    title.innerText = "ZAKÁZANÝ SYSTÉM ✖";
+                    title.className = "font-mono text-xs font-bold uppercase tracking-wider text-rose-500";
+                    desc.innerHTML = `<strong class="text-rose-400">${name}</strong> je externá databáza. Podľa Článku VI. hrozí <span class="underline decoration-rose-500 font-bold">právna žaloba</span> v prípade jej použitia.`;
+                    icon.innerHTML = `<i class="fa-solid fa-ban text-rose-500"></i>`;
+                    icon.className = "h-12 w-12 rounded-full bg-rose-500/10 border border-rose-500/20 flex items-center justify-center text-lg mb-3";
+                    showToast(`Varovanie: Použitie ${name} je prísne zakázané!`);
+                }
+            }, 800);
+        }
+
+        // Form handler
+        function handleReport(e) {
+            e.preventDefault();
+            showToast("Nahlásenie bolo zaevidované. Identita overená cez secure proxy. Ďakujeme.");
+            e.target.reset();
+        }
+
+        // Custom toast helper (replaces alerts)
+        function showToast(message, type = "error") {
+            const toast = document.getElementById('toast');
+            const toastText = document.getElementById('toast-text');
+            toastText.innerText = message;
+            
+            // Adjust styling based on type
+            if (type === "success") {
+                toast.classList.remove('border-rose-500');
+                toast.classList.add('border-emerald-500');
+            } else {
+                toast.classList.remove('border-emerald-500');
+                toast.classList.add('border-rose-500');
+            }
+
+            toast.classList.remove('translate-y-24', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+
+            setTimeout(() => {
+                toast.classList.remove('translate-y-0', 'opacity-100');
+                toast.classList.add('translate-y-24', 'opacity-0');
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
